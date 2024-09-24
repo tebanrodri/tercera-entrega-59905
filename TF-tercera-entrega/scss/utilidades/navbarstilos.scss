@@ -1,0 +1,26 @@
+.navbar {
+    &-brand {
+      img {
+        height: $navbar-brand-height;
+        width: auto;
+      }
+    }
+  
+    &.color-bg {
+      background-color: $navbar-bg;
+      border-bottom: $navbar-border;
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        &:hover {
+          color: $hover-color;
+        }
+      }
+  
+      // Estilos del botón dentro del navbar
+      .btn {
+        @include boton-styles($boton-bg, $boton-hover-bg, $boton-hover-color);
+      }
+    }
+  }
